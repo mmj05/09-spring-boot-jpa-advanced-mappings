@@ -22,13 +22,12 @@ public class CruddemoApplication {
 	@Bean
 	public CommandLineRunner commandLineRunner(AppDAO appDAO) {
 		return runner -> {
-
-			// createCourseAndReviews(appDAO);
-
-			// retrieveCourseAndReviews(appDAO);
-
-			deleteCourseAndReviews(appDAO);
+			
+			createCourseAndStudents(appDAO);
 		};
+	}
+
+	private void createCourseAndStudents(AppDAO appDAO) {
 	}
 
 	private void deleteCourseAndReviews(AppDAO appDAO) {
